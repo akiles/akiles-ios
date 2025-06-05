@@ -1,0 +1,11 @@
+framework module AkilesSDK {
+  umbrella header "AkilesSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module AkilesSDK.Swift {
+  header "AkilesSDK-Swift.h"
+  requires objc
+}
