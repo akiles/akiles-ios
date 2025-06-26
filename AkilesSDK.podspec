@@ -7,8 +7,8 @@ Pod::Spec.new do |spec|
                       DESC
 
   spec.homepage     = "https://github.com/akiles/akiles-ios"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Akiles" => "support@akiles.com" }
+  spec.license      = { :type => "LicenseRef-Akiles-Proprietary", :file => "LICENSE" }
+  spec.author       = { "Akiles Technologies S.L." => "support@akiles.app" }
 
   spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/akiles/akiles-ios.git", :tag => "#{spec.version}" }
