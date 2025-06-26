@@ -6,6 +6,13 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
         "name": "CoreNFC",
         "printedName": "CoreNFC",
         "declKind": "Import",
@@ -1848,13 +1855,6 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
       }
     ],
     "json_format_version": 8

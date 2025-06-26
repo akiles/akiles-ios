@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		gJUuJ3sxlBBzWDHm62ENXEifaBA=
+		rG5rr9qLjITRes9Z371tNW8fijA=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		izWbFXY/UOyugqBR8sFSIINReHY=
+		Hki/z/q7J5jCzl2EkMMqMFVReMA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vuTRBVMXVXVbp/ze/jY0CuVv0s8t4bFDlm1hgcJZGd4=
+			AUAmRkCKod31ZeoLfSxP/XPCQ+XOYxB+b0vys2AQua8=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2cky90tj7PdRSPti8Ok0gABViQ8ZT2BF1xDqVnMv9GE=
+			idr5ANT04ALW3wNpvZpJ14AVVuklVX2P6+Bwpk4P+lI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

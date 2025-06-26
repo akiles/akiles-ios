@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>UIBackgroundModes</key>
-    <array>
-      <string>bluetooth-central</string>
-    </array>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>This app uses location services to enhance device discovery and proximity-based features.</string>
-  </dict>
+<dict/>
 </plist>
