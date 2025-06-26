@@ -616,7 +616,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSupported;)
 ///
 /// \param completion Completion handler called when the session is created or fails
 ///
-- (void)createCardSessionWithLanguage:(NSString * _Nonnull)language completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)createCardSession:(NSString * _Nonnull)language completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
