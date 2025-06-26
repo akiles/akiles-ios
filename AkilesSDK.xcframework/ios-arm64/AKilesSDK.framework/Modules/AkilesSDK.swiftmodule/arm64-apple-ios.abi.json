@@ -36,6 +36,281 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "HCECardSession",
+        "printedName": "HCECardSession",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isSupported",
+            "printedName": "isSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession(cpy)isSupported",
+            "mangledName": "$s9AkilesSDK14HCECardSessionC11isSupportedSbvpZ",
+            "moduleName": "AkilesSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession(cm)isSupported",
+                "mangledName": "$s9AkilesSDK14HCECardSessionC11isSupportedSbvgZ",
+                "moduleName": "AkilesSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "checkEligibility",
+            "printedName": "checkEligibility(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession(cm)checkEligibility:",
+            "mangledName": "$s9AkilesSDK14HCECardSessionC16checkEligibilityyyySbcFZ",
+            "moduleName": "AkilesSDK",
+            "static": true,
+            "intro_iOS": "13.0",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createCardSession",
+            "printedName": "createCardSession(language:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession(im)createCardSessionWithLanguage:completion:",
+            "mangledName": "$s9AkilesSDK14HCECardSessionC010createCardD08language10completionySS_ySb_So7NSErrorCSgtctF",
+            "moduleName": "AkilesSDK",
+            "intro_iOS": "13.0",
+            "objc_name": "createCardSessionWithLanguage:completion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HCECardSession",
+                "printedName": "AkilesSDK.HCECardSession",
+                "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession(im)init",
+            "mangledName": "$s9AkilesSDK14HCECardSessionCACycfc",
+            "moduleName": "AkilesSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AkilesSDK@objc(cs)HCECardSession",
+        "mangledName": "$s9AkilesSDK14HCECardSessionC",
+        "moduleName": "AkilesSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1863,35 +2138,35 @@
     {
       "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 1040,
+      "offset": 920,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 2193,
+      "offset": 2071,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 2278,
+      "offset": 2156,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "StringLiteral",
-      "offset": 2370,
+      "offset": 2248,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "Dictionary",
-      "offset": 2436,
+      "offset": 2314,
       "length": 627,
       "value": "[(\"instructions\", [(\"en\", \"Hold the smartphone close to an Akiles device.\"), (\"es\", \"Acerca el smartphone a un dispositivo Akiles.\")]), (\"opening\", [(\"en\", \"Processing NFC communication...\"), (\"es\", \"Procesando la comunicación NFC...\")]), (\"success\", [(\"en\", \"NFC communication successful!\"), (\"es\", \"¡Comunicación NFC exitosa!\")]), (\"error\", [(\"en\", \"Something unexpected happened. Please try again.\"), (\"es\", \"Ocurrió algo inesperado. Por favor, intenta de nuevo.\")])]"
     }

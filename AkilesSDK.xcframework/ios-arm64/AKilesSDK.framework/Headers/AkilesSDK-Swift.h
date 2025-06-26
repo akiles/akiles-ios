@@ -587,6 +587,39 @@ SWIFT_CLASS("_TtC9AkilesSDK4Card") SWIFT_AVAILABILITY(ios,introduced=13.0)
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSError;
+/// Handling Host Card Emulation (HCE) NFC sessions.
+/// This class enables the iOS device to emulate an NFC card, allowing it to communicate
+/// with Akiles devices without requiring a physical card. Card emulation is available
+/// on iOS 17.4 and later with compatible hardware.
+SWIFT_CLASS("_TtC9AkilesSDK14HCECardSession")
+@interface HCECardSession : NSObject
+/// Indicates whether the current device supports NFC card emulation.
+/// Card emulation requires iOS 17.4 or later and compatible NFC hardware.
+/// This property checks the system capabilities without requesting permissions.
+///
+/// returns:
+/// <code>true</code> if card emulation is supported by the device and OS, <code>false</code> otherwise
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSupported;)
++ (BOOL)isSupported SWIFT_WARN_UNUSED_RESULT;
+/// Checks whether the current device is eligible for starting a card emulation session.
+/// This method verifies that the device not only supports card emulation but also
+/// has the necessary permissions and settings enabled. It may prompt the user
+/// for NFC permissions if they haven’t been granted yet.
+/// \param completion Completion handler called with the eligibility result
+///
++ (void)checkEligibility:(void (^ _Nonnull)(BOOL))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+/// Creates a card emulation session and initiates NFC communication.
+/// This method sets up the device to act as an NFC card, allowing it to communicate
+/// with Akiles devices. The session will remain active until invalidated or an error occurs.
+/// \param language Language code for localized user messages (e.g., “en”, “es”)
+///
+/// \param completion Completion handler called when the session is created or fails
+///
+- (void)createCardSessionWithLanguage:(NSString * _Nonnull)language completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

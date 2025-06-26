@@ -9,6 +9,17 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class HCECardSession : ObjectiveC.NSObject {
+  @objc public static var isSupported: Swift.Bool {
+    @objc get
+  }
+  @available(iOS 13.0, *)
+  @objc public static func checkEligibility(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+  @available(iOS 13.0, *)
+  @objc public func createCardSession(language: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class CancellableOp<T, E> : ObjectiveC.NSObject, AkilesSDK.Cancellable where E : Swift.Error {
   @objc public func cancel()
