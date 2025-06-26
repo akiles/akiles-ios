@@ -1651,8 +1651,8 @@
           },
           {
             "kind": "Function",
-            "name": "createCardSession",
-            "printedName": "createCardSession(_:completion:)",
+            "name": "startCardEmulation",
+            "printedName": "startCardEmulation(_:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1706,8 +1706,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)createCardSession:completion:",
-            "mangledName": "$s9AkilesSDK0A0C17createCardSession_10completionySS_ySb_So7NSErrorCSgtctF",
+            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)startCardEmulation:completion:",
+            "mangledName": "$s9AkilesSDK0A0C18startCardEmulation_10completionySS_ySb_So7NSErrorCSgtctF",
             "moduleName": "AkilesSDK",
             "intro_iOS": "13.0",
             "declAttributes": [

@@ -558,7 +558,7 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 ///
 /// \param completion Completion handler called when the session is created or fails
 ///
-- (void)createCardSession:(NSString * _Nonnull)language completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)startCardEmulation:(NSString * _Nonnull)language completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
 @end
 
 @class NSData;

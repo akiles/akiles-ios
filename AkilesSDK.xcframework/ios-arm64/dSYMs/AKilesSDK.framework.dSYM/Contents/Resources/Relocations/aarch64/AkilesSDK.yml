@@ -450,8 +450,8 @@ relocations:
   - { offset: 0x772FE, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C24isCardEmulationSupportedyyySbcFTo', symObjAddr: 0xA34C, symBinAddr: 0x13BC4, symSize: 0x54 }
   - { offset: 0x77329, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C20isBluetoothSupportedSbyF', symObjAddr: 0xA3A0, symBinAddr: 0x13C18, symSize: 0x8 }
   - { offset: 0x7735C, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C20isBluetoothSupportedSbyFTo', symObjAddr: 0xA3A8, symBinAddr: 0x13C20, symSize: 0x8 }
-  - { offset: 0x773F6, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C17createCardSession_10completionySS_ySb_So7NSErrorCSgtctF', symObjAddr: 0xA3B0, symBinAddr: 0x13C28, symSize: 0x2F0 }
-  - { offset: 0x77618, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C17createCardSession_10completionySS_ySb_So7NSErrorCSgtctFTo', symObjAddr: 0xA6A0, symBinAddr: 0x13F18, symSize: 0x84 }
+  - { offset: 0x773F6, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C18startCardEmulation_10completionySS_ySb_So7NSErrorCSgtctF', symObjAddr: 0xA3B0, symBinAddr: 0x13C28, symSize: 0x2F0 }
+  - { offset: 0x77618, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C18startCardEmulation_10completionySS_ySb_So7NSErrorCSgtctFTo', symObjAddr: 0xA6A0, symBinAddr: 0x13F18, symSize: 0x84 }
   - { offset: 0x77658, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK4CardC02isaC0SbyFTo', symObjAddr: 0xA734, symBinAddr: 0x13FAC, symSize: 0x18 }
   - { offset: 0x77670, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK4CardC02isaC0SbyFTo', symObjAddr: 0xA734, symBinAddr: 0x13FAC, symSize: 0x18 }
   - { offset: 0x776A3, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK4CardC6getUid10Foundation4DataVyFTo', symObjAddr: 0xA74C, symBinAddr: 0x13FC4, symSize: 0x8C }
@@ -461,7 +461,7 @@ relocations:
   - { offset: 0x777AF, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK4CardCACycfcTo', symObjAddr: 0xAC20, symBinAddr: 0x14498, symSize: 0x2C }
   - { offset: 0x77810, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK13CancellableOpCACyxq_GycfcTf4d_n', symObjAddr: 0xAD48, symBinAddr: 0x145C0, symSize: 0x2C }
   - { offset: 0x77884, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C24isCardEmulationSupportedyyySbcF39$s10ObjectiveC8ObjCBoolVIeyBy_SbIegy_TR0H1C0jK0VIeyBy_Tf1cn_nTf4dg_n', symObjAddr: 0xB4AC, symBinAddr: 0x14B48, symSize: 0x19C }
-  - { offset: 0x778FD, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C17createCardSession_10completionySS_ySb_So7NSErrorCSgtctF027$s10ObjectiveC8ObjCBoolVSo7G22CSgIeyByy_SbAFIegyg_TR0I1C0kL0VAHIeyByy_Tf1ncn_nTf4ndg_n', symObjAddr: 0xB648, symBinAddr: 0x14CE4, symSize: 0x31C }
+  - { offset: 0x778FD, size: 0x8, addend: 0x0, symName: '_$s9AkilesSDK0A0C18startCardEmulation_10completionySS_ySb_So7NSErrorCSgtctF027$s10ObjectiveC8ObjCBoolVSo7G22CSgIeyByy_SbAFIegyg_TR0I1C0kL0VAHIeyByy_Tf1ncn_nTf4ndg_n', symObjAddr: 0xB648, symBinAddr: 0x14CE4, symSize: 0x31C }
   - { offset: 0x8D62A, size: 0x8, addend: 0x0, symName: '__ZN108_$LT$alloc..collections..btree..map..Iter$LT$K$C$V$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17heb3f9549ef604ecbE', symObjAddr: 0x0, symBinAddr: 0x762F64, symSize: 0x13C }
   - { offset: 0x8DB28, size: 0x8, addend: 0x0, symName: '__ZN5alloc11collections5btree4node208Handle$LT$alloc..collections..btree..node..NodeRef$LT$alloc..collections..btree..node..marker..Mut$C$K$C$V$C$alloc..collections..btree..node..marker..Leaf$GT$$C$alloc..collections..btree..node..marker..KV$GT$5split17h09ffc3a9e83e5ed4E', symObjAddr: 0xEB18, symBinAddr: 0x7703DC, symSize: 0x1D4 }
   - { offset: 0x8E04B, size: 0x8, addend: 0x0, symName: '__ZN5alloc11collections5btree4node208Handle$LT$alloc..collections..btree..node..NodeRef$LT$alloc..collections..btree..node..marker..Mut$C$K$C$V$C$alloc..collections..btree..node..marker..Leaf$GT$$C$alloc..collections..btree..node..marker..KV$GT$5split17h80c09bac1f029d41E', symObjAddr: 0xECEC, symBinAddr: 0x7705B0, symSize: 0x1C8 }
