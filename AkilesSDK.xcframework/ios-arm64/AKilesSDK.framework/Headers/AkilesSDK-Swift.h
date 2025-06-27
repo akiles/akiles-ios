@@ -551,7 +551,7 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 /// returns:
 /// <code>true</code> if Bluetooth is supported, <code>false</code> otherwise
 - (BOOL)isBluetoothSupported SWIFT_WARN_UNUSED_RESULT;
-/// Creates a card emulation session and initiates NFC communication.
+/// Starts a card emulation session and initiates NFC communication.
 /// This method sets up the device to act as an NFC card, allowing it to communicate
 /// with Akiles devices. The session will remain active until invalidated or an error occurs.
 /// \param language Language code for localized user messages (e.g., “en”, “es”)
@@ -594,15 +594,6 @@ SWIFT_CLASS("_TtC9AkilesSDK4Card") SWIFT_AVAILABILITY(ios,introduced=13.0)
 - (void)update:(void (^ _Nonnull)(NSError * _Nullable))completion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-/// Handling Host Card Emulation (HCE) NFC sessions.
-/// This class enables the iOS device to emulate an NFC card, allowing it to communicate
-/// with Akiles devices without requiring a physical card. Card emulation is available
-/// on iOS 17.4 and later with compatible hardware.
-SWIFT_CLASS("_TtC9AkilesSDK14HCECardSession")
-@interface HCECardSession : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

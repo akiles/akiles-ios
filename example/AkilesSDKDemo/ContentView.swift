@@ -116,6 +116,11 @@ struct ContentView: View {
     // Action execution state
     @State private var actionTask: Task<Void, Never>? = nil
     
+    // NFC card emulation state
+    @State private var emulationToastMessage: String = ""
+    @State private var emulationToastIsError: Bool = false
+    @State private var showEmulationToast: Bool = false
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -288,6 +293,33 @@ struct ContentView: View {
                                         }
                                     }
                             }
+                        }
+                        
+                        // NFC Card Emulation Widget
+                        NFCCardEmulationView(
+                            akiles: akiles,
+                            isLoading: isLoading,
+                            onEmulationComplete: { message in
+                                showEmulationToast(message: message, isError: false)
+                            },
+                            onEmulationError: { message in
+                                showEmulationToast(message: message, isError: true)
+                            }
+                        )
+                        
+                        // Emulation Toast Message
+                        if showEmulationToast {
+                            Text(emulationToastMessage)
+                                .padding()
+                                .background(emulationToastIsError ? Color.red.opacity(0.1) : Color.green.opacity(0.1))
+                                .foregroundColor(emulationToastIsError ? .red : .green)
+                                .cornerRadius(8)
+                                .animation(.easeInOut, value: showEmulationToast)
+                                .onAppear {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                        showEmulationToast = false
+                                    }
+                                }
                         }
                     }
                     
@@ -639,6 +671,12 @@ struct ContentView: View {
         nfcToastMessage = message
         nfcToastIsError = isError
         showNfcToast = true
+    }
+    
+    private func showEmulationToast(message: String, isError: Bool) {
+        emulationToastMessage = message
+        emulationToastIsError = isError
+        showEmulationToast = true
     }
     
     // MARK: - Cancellation Functions
