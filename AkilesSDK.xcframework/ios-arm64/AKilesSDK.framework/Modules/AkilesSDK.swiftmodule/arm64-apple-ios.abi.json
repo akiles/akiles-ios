@@ -6,6 +6,30 @@
     "children": [
       {
         "kind": "Import",
+        "name": "CoreNFC",
+        "printedName": "CoreNFC",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AkilesSDK.RustWrapper",
+        "printedName": "AkilesSDK.RustWrapper",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1508,8 +1532,8 @@
           },
           {
             "kind": "Function",
-            "name": "startCardEmulation",
-            "printedName": "startCardEmulation(language:)",
+            "name": "setLanguage",
+            "printedName": "setLanguage(language:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1524,8 +1548,32 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9AkilesSDK0A0C18startCardEmulation8languageySS_tYaKF",
-            "mangledName": "$s9AkilesSDK0A0C18startCardEmulation8languageySS_tYaKF",
+            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)setLanguageWithLanguage:",
+            "mangledName": "$s9AkilesSDK0A0C11setLanguage8languageySS_tF",
+            "moduleName": "AkilesSDK",
+            "objc_name": "setLanguageWithLanguage:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startCardEmulation",
+            "printedName": "startCardEmulation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AkilesSDK0A0C18startCardEmulationyyYaKF",
+            "mangledName": "$s9AkilesSDK0A0C18startCardEmulationyyYaKF",
             "moduleName": "AkilesSDK",
             "intro_iOS": "13.0",
             "declAttributes": [
@@ -1540,18 +1588,12 @@
           {
             "kind": "Function",
             "name": "startCardEmulation",
-            "printedName": "startCardEmulation(_:completion:)",
+            "printedName": "startCardEmulation(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeFunc",
@@ -1594,8 +1636,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)startCardEmulation:completion:",
-            "mangledName": "$s9AkilesSDK0A0C18startCardEmulation_10completionySS_ySb_So7NSErrorCSgtctF",
+            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)startCardEmulation:",
+            "mangledName": "$s9AkilesSDK0A0C18startCardEmulationyyySb_So7NSErrorCSgtcF",
             "moduleName": "AkilesSDK",
             "intro_iOS": "13.0",
             "declAttributes": [
@@ -1932,30 +1974,6 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreNFC",
-        "printedName": "CoreNFC",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "AkilesSDK.RustWrapper",
-        "printedName": "AkilesSDK.RustWrapper",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       }
     ],
     "json_format_version": 8

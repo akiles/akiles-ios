@@ -551,6 +551,9 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 /// returns:
 /// <code>true</code> if Bluetooth is supported, <code>false</code> otherwise
 - (BOOL)isBluetoothSupported SWIFT_WARN_UNUSED_RESULT;
+/// Set the language to provide localized error messages.
+/// Defaults to ‘en’
+- (void)setLanguageWithLanguage:(NSString * _Nonnull)language;
 /// Starts a card emulation session and initiates NFC communication.
 /// This method sets up the device to act as an NFC card, allowing it to communicate
 /// with Akiles devices. The session will remain active until invalidated or an error occurs.
@@ -558,7 +561,7 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 ///
 /// \param completion Completion handler called when the session is created or fails
 ///
-- (void)startCardEmulation:(NSString * _Nonnull)language completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
+- (void)startCardEmulation:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,introduced=13.0);
 @end
 
 @class NSData;

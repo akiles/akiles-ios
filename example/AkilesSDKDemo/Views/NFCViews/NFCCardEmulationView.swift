@@ -11,16 +11,6 @@ struct NFCCardEmulationView: View {
     @State private var isEmulating: Bool = false
     @State private var emulationTask: Task<Void, Never>? = nil
     
-    private let languages = ["en", "es", "fr", "de", "it", "pt"]
-    private let languageNames = [
-        "en": "English",
-        "es": "Español",
-        "fr": "Français", 
-        "de": "Deutsch",
-        "it": "Italiano",
-        "pt": "Português"
-    ]
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("NFC Card Emulation")
@@ -32,22 +22,6 @@ struct NFCCardEmulationView: View {
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
-                
-                // Language Selection
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Language")
-                        .font(.subheadline)
-                        .fontWeight(.medium)
-                    
-                    Picker("Language", selection: $selectedLanguage) {
-                        ForEach(languages, id: \.self) { language in
-                            Text(languageNames[language] ?? language)
-                                .tag(language)
-                        }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .disabled(isEmulating || isLoading)
-                }
                 
                 // Control Buttons
                 HStack(spacing: 12) {
@@ -117,11 +91,11 @@ struct NFCCardEmulationView: View {
         
         emulationTask = Task {
             do {
-                try await akiles.startCardEmulation(language: selectedLanguage)
+                try await akiles.startCardEmulation()
                 DispatchQueue.main.async {
                     self.isEmulating = false
                     self.emulationTask = nil
-                    self.onEmulationComplete("Card emulation completed successfully with language: \(self.selectedLanguage)")
+                    self.onEmulationComplete("Card emulation completed successfully")
                 }
             } catch {
                 DispatchQueue.main.async {

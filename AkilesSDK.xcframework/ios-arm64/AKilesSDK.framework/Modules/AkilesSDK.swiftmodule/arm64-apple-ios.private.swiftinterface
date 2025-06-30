@@ -44,10 +44,11 @@ public class CancellableOp<T, E> : ObjectiveC.NSObject, AkilesSDK.Cancellable wh
   final public func isCardEmulationSupported() async -> Swift.Bool
   @objc final public func isCardEmulationSupported(_ completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc final public func isBluetoothSupported() -> Swift.Bool
+  @objc final public func setLanguage(language: Swift.String)
   @available(iOS 13.0, *)
-  final public func startCardEmulation(language: Swift.String) async throws
+  final public func startCardEmulation() async throws
   @available(iOS 13.0, *)
-  @objc final public func startCardEmulation(_ language: Swift.String, completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  @objc final public func startCardEmulation(_ completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
