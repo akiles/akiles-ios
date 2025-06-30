@@ -80,113 +80,9 @@ typedef NS_ENUM(NSInteger, SyncStatus) {
     SyncStatusSyncingServer = 3
 };
 
-#pragma - Interfaces
-
 /**
- * Represents an Akiles device that can be discovered and synchronized.
- *
- * Hardware objects contain information about physical Akiles devices
- * that can be communicated with via Bluetooth or other protocols.
+ * Error codes for Akiles oeprations.
  */
-@interface Hardware : NSObject
-
-/** Unique identifier for this Akiles device */
-@property (nonatomic, strong) NSString *id;
-
-/** Human-readable name of the Akiles device */
-@property (nonatomic, strong) NSString *name;
-
-/** Product identifier indicating the type of Akiles device */
-@property (nonatomic, strong) NSString *productId;
-
-/** Revision identifier for the device firmware/hardware version */
-@property (nonatomic, strong) NSString *revisionId;
-
-/** Array of session IDs that have access to this device */
-@property (nonatomic, strong) NSArray<NSString *> *sessions;
-
-@end
-
-/**
- * Represents an action that can be performed on an Akiles device.
- *
- * Actions are specific operations like opening doors, turning on lights,
- * or other automated functions that Akiles devices can perform.
- */
-@interface Action : NSObject
-
-/** Unique identifier for this action */
-@property (nonatomic, strong) NSString *id;
-
-/** Human-readable name describing what this action does */
-@property (nonatomic, strong) NSString *name;
-
-@end
-
-/**
- * Represents an Akiles device (gadget) that can perform actions.
- *
- * Gadgets are Akiles devices that have been configured with specific
- * actions and are accessible through the Akiles API. They represent
- * the functional interface to physical devices.
- */
-@interface Gadget : NSObject
-
-/** Unique identifier for this Akiles device */
-@property (nonatomic, strong) NSString *id;
-
-/** Human-readable name of the Akiles device */
-@property (nonatomic, strong) NSString *name;
-
-/** Array of actions that can be performed on this device */
-@property (nonatomic, strong) NSArray<Action *> *actions;
-
-@end
-
-/**
- * Configuration options for action execution.
- *
- * These options control how the SDK attempts to communicate with
- * Akiles devices and what permissions it should request.
- */
-@interface ActionOptions : NSObject
-
-/** Whether to request Bluetooth permission if not already granted */
-@property (nonatomic) bool requestBluetoothPermission;
-
-/** Whether to request location permission if not already granted */
-@property (nonatomic) bool requestLocationPermission;
-
-/** Whether to attempt communication via the Akiles API (requires internet) */
-@property (nonatomic) bool useInternet;
-
-/** Whether to attempt communication via Bluetooth */
-@property (nonatomic) bool useBluetooth;
-
-/**
- * Creates an ActionOptions instance with recommended default values.
- * @return ActionOptions instance with sensible defaults
- */
-+ (ActionOptions *)initWithDefaults;
-@end
-
-
-@protocol CancelProxy<NSObject>
-
-- (void)cancel;
-
-@end
-
-@interface Cancel: NSObject
-
-@property (nonatomic) bool cancelled;
-@property (nonatomic, retain) id<CancelProxy> proxy;
-
-- (void)setCancel:(id<CancelProxy> _Nonnull)proxy;
-- (void)cancel;
-@end
-
-
 typedef NS_ENUM(NSInteger, ErrorCode) {
     ErrorCodeInternal = 0,                                  // Something went wrong internally.
     ErrorCodeInvalidParam = 1,                              // Invalid parameter.
@@ -325,6 +221,127 @@ NSString *const PermissionDeniedOutOfScheduleWaitTime = @"wait_time";
 @property (nonatomic, assign) NSInteger end;
 
 @end
+
+/// Converts ActionInternetStatus to UPPER_CASE_WITH_UNDERSCORES string.
+NSString *NSStringFromActionInternetStatus(ActionInternetStatus status);
+
+/// Converts ActionBluetoothStatus to UPPER_CASE_WITH_UNDERSCORES string.
+NSString *NSStringFromActionBluetoothStatus(ActionBluetoothStatus status);
+
+/// Converts SyncStatus to UPPER_CASE_WITH_UNDERSCORES string.
+NSString *NSStringFromSyncStatus(SyncStatus status);
+
+/// Converts ErrorCode to UPPER_CASE_WITH_UNDERSCORES string.
+NSString *NSStringFromErrorCode(ErrorCode code);
+
+#pragma - Interfaces
+
+/**
+ * Represents an Akiles device that can be discovered and synchronized.
+ *
+ * Hardware objects contain information about physical Akiles devices
+ * that can be communicated with via Bluetooth or other protocols.
+ */
+@interface Hardware : NSObject
+
+/** Unique identifier for this Akiles device */
+@property (nonatomic, strong) NSString *id;
+
+/** Human-readable name of the Akiles device */
+@property (nonatomic, strong) NSString *name;
+
+/** Product identifier indicating the type of Akiles device */
+@property (nonatomic, strong) NSString *productId;
+
+/** Revision identifier for the device firmware/hardware version */
+@property (nonatomic, strong) NSString *revisionId;
+
+/** Array of session IDs that have access to this device */
+@property (nonatomic, strong) NSArray<NSString *> *sessions;
+
+@end
+
+/**
+ * Represents an action that can be performed on an Akiles device.
+ *
+ * Actions are specific operations like opening doors, turning on lights,
+ * or other automated functions that Akiles devices can perform.
+ */
+@interface Action : NSObject
+
+/** Unique identifier for this action */
+@property (nonatomic, strong) NSString *id;
+
+/** Human-readable name describing what this action does */
+@property (nonatomic, strong) NSString *name;
+
+@end
+
+/**
+ * Represents an Akiles device (gadget) that can perform actions.
+ *
+ * Gadgets are Akiles devices that have been configured with specific
+ * actions and are accessible through the Akiles API. They represent
+ * the functional interface to physical devices.
+ */
+@interface Gadget : NSObject
+
+/** Unique identifier for this Akiles device */
+@property (nonatomic, strong) NSString *id;
+
+/** Human-readable name of the Akiles device */
+@property (nonatomic, strong) NSString *name;
+
+/** Array of actions that can be performed on this device */
+@property (nonatomic, strong) NSArray<Action *> *actions;
+
+@end
+
+/**
+ * Configuration options for action execution.
+ *
+ * These options control how the SDK attempts to communicate with
+ * Akiles devices and what permissions it should request.
+ */
+@interface ActionOptions : NSObject
+
+/** Whether to request Bluetooth permission if not already granted */
+@property (nonatomic) bool requestBluetoothPermission;
+
+/** Whether to request location permission if not already granted */
+@property (nonatomic) bool requestLocationPermission;
+
+/** Whether to attempt communication via the Akiles API (requires internet) */
+@property (nonatomic) bool useInternet;
+
+/** Whether to attempt communication via Bluetooth */
+@property (nonatomic) bool useBluetooth;
+
+/**
+ * Creates an ActionOptions instance with recommended default values.
+ * @return ActionOptions instance with sensible defaults
+ */
++ (ActionOptions *)initWithDefaults;
+@end
+
+
+@protocol CancelProxy<NSObject>
+
+- (void)cancel;
+
+@end
+
+@interface Cancel: NSObject
+
+@property (nonatomic) bool cancelled;
+@property (nonatomic, retain) id<CancelProxy> proxy;
+
+- (void)setCancel:(id<CancelProxy> _Nonnull)proxy;
+- (void)cancel;
+@end
+
+
+
 
 #pragma mark - Protocol Definitions
 
