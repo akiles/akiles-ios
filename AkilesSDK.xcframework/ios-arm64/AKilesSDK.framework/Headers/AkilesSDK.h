@@ -213,12 +213,12 @@ NSString *const PermissionDeniedOutOfScheduleWaitTime = @"wait_time";
 /**
  * Start of the range, in seconds since midnight (inclusive).
  */
-@property (nonatomic, assign) NSInteger start;
+@property (nonatomic, strong) NSNumber *start;
 
 /**
  * End of the range, in seconds since midnight (exclusive).
  */
-@property (nonatomic, assign) NSInteger end;
+@property (nonatomic, strong) NSNumber *end;
 
 @end
 
