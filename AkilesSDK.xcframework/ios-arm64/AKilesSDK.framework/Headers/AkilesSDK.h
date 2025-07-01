@@ -234,6 +234,9 @@ NSString *NSStringFromSyncStatus(SyncStatus status);
 /// Converts ErrorCode to UPPER_CASE_WITH_UNDERSCORES string.
 NSString *NSStringFromErrorCode(ErrorCode code);
 
+/// Converts reason to a dictionary
+NSDictionary *NSDictionaryFromSchedule(Schedule *schedule);
+
 #pragma - Interfaces
 
 /**
