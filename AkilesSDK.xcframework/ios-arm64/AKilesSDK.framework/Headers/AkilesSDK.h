@@ -172,21 +172,22 @@ typedef NS_ENUM(NSInteger, ErrorCode) {
 @end
 
 /// Converts ActionInternetStatus to UPPER_CASE_WITH_UNDERSCORES string.
-NSString *NSStringFromActionInternetStatus(ActionInternetStatus status);
+FOUNDATION_EXPORT NSString *NSStringFromActionInternetStatus(ActionInternetStatus status);
 
 /// Converts ActionBluetoothStatus to UPPER_CASE_WITH_UNDERSCORES string.
-NSString *NSStringFromActionBluetoothStatus(ActionBluetoothStatus status);
+FOUNDATION_EXPORT NSString *NSStringFromActionBluetoothStatus(ActionBluetoothStatus status);
 
 /// Converts SyncStatus to UPPER_CASE_WITH_UNDERSCORES string.
-NSString *NSStringFromSyncStatus(SyncStatus status);
+FOUNDATION_EXPORT NSString *NSStringFromSyncStatus(SyncStatus status);
 
 /// Converts ErrorCode to UPPER_CASE_WITH_UNDERSCORES string.
-NSString *NSStringFromErrorCode(ErrorCode code);
+FOUNDATION_EXPORT NSString *NSStringFromErrorCode(ErrorCode code);
 
 /// Converts reason to a dictionary
-NSDictionary *NSDictionaryFromSchedule(Schedule *schedule);
+FOUNDATION_EXPORT NSDictionary *NSDictionaryFromSchedule(Schedule *schedule);
 
-NSDictionary *NSDictionaryFromNSError(NSError *error);
+/// Converts an NSError to a dictionary
+FOUNDATION_EXPORT NSDictionary *NSDictionaryFromNSError(NSError *error);
 
 #pragma - Interfaces
 
