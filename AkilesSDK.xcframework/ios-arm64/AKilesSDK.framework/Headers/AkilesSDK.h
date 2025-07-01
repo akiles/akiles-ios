@@ -237,6 +237,8 @@ NSString *NSStringFromErrorCode(ErrorCode code);
 /// Converts reason to a dictionary
 NSDictionary *NSDictionaryFromSchedule(Schedule *schedule);
 
+NSDictionary *NSDictionaryFromNSError(NSError *error);
+
 #pragma - Interfaces
 
 /**
