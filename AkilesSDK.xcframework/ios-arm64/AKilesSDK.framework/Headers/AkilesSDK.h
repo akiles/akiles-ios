@@ -109,57 +109,6 @@ typedef NS_ENUM(NSInteger, ErrorCode) {
     ErrorCodeLocationPermissionNotGrantedPermanently = 24,  // Location permission is permanently denied.
 };
 
-/**
- * Permission denied reason other.
- */
-NSString *const PermissionDeniedReasonOther = @"other";
-
-/**
- * Permission denied member not started.
- */
-NSString *const PermissionDeniedReasonMemberNotStarted = @"member_not_started";
-
-/**
- * Permission denied member has ended.
- */
-NSString *const PermissionDeniedReasonMemberEnded = @"member_ended";
-
-/**
- * Permission denied outside schedule.
- */
-NSString *const PermissionDeniedReasonOutOfSchedule = @"out_of_schedule";
-
-/**
- * Permission denied organization disabled.
- */
-NSString *const PermissionDeniedReasonOrganizationDisabled = @"organization_disabled";
-
-
-/**
- * Time at which member is started.
- */
-NSString *const PermissionDeniedMemberNotStartedStartsAt = @"starts_at";
-
-/**
- * Time at which member is ended.
- */
-NSString *const PermissionDeniedMemberNotEndedEndsAt = @"ends_at";
-
-/**
- * The schedule.
- */
-NSString *const PermissionDeniedOutOfScheduleSchedule = @"schedule";
-
-/**
- * The timezone.
- */
-NSString *const PermissionDeniedOutOfScheduleTimezone = @"timezone";
-
-/**
- * The wait time.
- */
-NSString *const PermissionDeniedOutOfScheduleWaitTime = @"wait_time";
-
 @class ScheduleWeekday;
 @class ScheduleRange;
 
