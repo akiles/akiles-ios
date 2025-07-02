@@ -109,68 +109,6 @@ typedef NS_ENUM(NSInteger, ErrorCode) {
     ErrorCodeLocationPermissionNotGrantedPermanently = 24,  // Location permission is permanently denied.
 };
 
-@class ScheduleWeekday;
-@class ScheduleRange;
-
-/**
- * Schedule for when a member is allowed to open a gadget.
- *
- * Example:
- * {
- *   "weekdays": [
- *     { "ranges": [ { "start": 480, "end": 1020 } ] },
- *     { "ranges": [ { "start": 480, "end": 1020 } ] },
- *     { "ranges": [ { "start": 480, "end": 1020 } ] },
- *     { "ranges": [ { "start": 480, "end": 1020 } ] },
- *     { "ranges": [ { "start": 480, "end": 1020 } ] },
- *     { "ranges": [] },
- *     { "ranges": [] }
- *   ]
- * }
- *
- * Each element in weekdays corresponds to a day of the week, starting
- * with Monday (index 0).
- * Each ScheduleWeekday contains an array of ScheduleRange objects, each
- * representing a time interval in seconds since midnight.
- */
-@interface Schedule : NSObject
-
-/**
- * Array of 7 elements, one for each day of the week (Monday=0).
- */
-@property (nonatomic, strong) NSArray<ScheduleWeekday *> *weekdays;
-
-@end
-
-/**
- * Represents a single day in the schedule.
- */
-@interface ScheduleWeekday : NSObject
-
-/**
- * Array of allowed time ranges for this day, in seconds since midnight.
- */
-@property (nonatomic, strong) NSArray<ScheduleRange *> *ranges;
-
-@end
-
-/**
- * Represents a time range in seconds since midnight.
- */
-@interface ScheduleRange : NSObject
-
-/**
- * Start of the range, in seconds since midnight (inclusive).
- */
-@property (nonatomic, strong) NSNumber *start;
-
-/**
- * End of the range, in seconds since midnight (exclusive).
- */
-@property (nonatomic, strong) NSNumber *end;
-
-@end
-
 /// Converts ActionInternetStatus to UPPER_CASE_WITH_UNDERSCORES string.
 FOUNDATION_EXPORT NSString *NSStringFromActionInternetStatus(ActionInternetStatus status);
 
@@ -183,10 +121,6 @@ FOUNDATION_EXPORT NSString *NSStringFromSyncStatus(SyncStatus status);
 /// Converts ErrorCode to UPPER_CASE_WITH_UNDERSCORES string.
 FOUNDATION_EXPORT NSString *NSStringFromErrorCode(ErrorCode code);
 
-/// Converts reason to a dictionary
-FOUNDATION_EXPORT NSDictionary *NSDictionaryFromSchedule(Schedule *schedule);
-
-/// Converts an NSError to a dictionary
 FOUNDATION_EXPORT NSDictionary *NSDictionaryFromNSError(NSError *error);
 
 #pragma - Interfaces
