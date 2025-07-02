@@ -27,6 +27,7 @@ jobs:
     - name: Build for iOS Device
       run: |
         cd example
+        touch Local.xcconfig
         xcodebuild -project AkilesSDKDemo.xcodeproj \
           -scheme AkilesSDKDemo \
           -destination 'generic/platform=iOS' \
