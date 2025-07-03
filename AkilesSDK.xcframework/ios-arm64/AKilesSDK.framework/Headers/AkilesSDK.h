@@ -19,12 +19,6 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for AkilesSDK.
-FOUNDATION_EXPORT double sdkVersionNumber;
-
-//! Project version string for AkilesSDK.
-FOUNDATION_EXPORT const unsigned char sdkVersionString[];
-
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Enums
@@ -213,27 +207,11 @@ FOUNDATION_EXPORT NSDictionary *NSDictionaryFromNSError(NSError *error);
 + (ActionOptions *)initWithDefaults;
 @end
 
-
-@protocol CancelProxy<NSObject>
-
-- (void)cancel;
-
-@end
-
-@interface Cancel: NSObject
-
-@property (nonatomic) bool cancelled;
-@property (nonatomic, retain) id<CancelProxy> proxy;
-
-- (void)setCancel:(id<CancelProxy> _Nonnull)proxy;
-- (void)cancel;
-@end
-
-
-
-
 #pragma mark - Protocol Definitions
 
+/**
+ * Protocol for an operation that can be cancelled.
+ */
 @protocol Cancellable<NSObject>
 
 /**

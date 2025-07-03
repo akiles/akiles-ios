@@ -17,6 +17,8 @@ public class CancellableOp<T, E> : ObjectiveC.NSObject, AkilesSDK.Cancellable wh
 @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @objc final public class Akiles : ObjectiveC.NSObject {
   @objc override dynamic public init()
+  @objc final public func getVersion() -> Swift.String
+  @objc final public func getClientInfo() -> Swift.String
   final public func getSessionIDs() async throws -> [Swift.String]
   @objc final public func getSessionIDs(_ completion: @escaping ([Swift.String]?, (any Swift.Error)?) -> Swift.Void)
   final public func addSession(token: Swift.String) async throws -> Swift.String

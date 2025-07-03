@@ -346,6 +346,12 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 /// The SDK will automatically initialize its internal components and establish
 /// connections to required services.
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Get the version of the Akiles SDK.
+/// @return the version string of the SDK.
+- (NSString * _Nonnull)getVersion SWIFT_WARN_UNUSED_RESULT;
+/// Do not use, internal use only.
+/// @return do not use!
+- (NSString * _Nonnull)getClientInfo SWIFT_WARN_UNUSED_RESULT;
 /// Retrieves all session IDs from the local session store (Objective-C version).
 /// This is the Objective-C compatible version of <code>getSessionIDs()</code>.
 /// For Swift code, prefer using the async version which provides better error handling.
