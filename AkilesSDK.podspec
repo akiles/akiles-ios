@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "LicenseRef-Akiles-Proprietary", :file => "LICENSE" }
   spec.author       = { "Akiles Technologies S.L." => "support@akiles.app" }
 
-  spec.platform     = :ios, "13.0"
+  spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/akiles/akiles-ios.git", :tag => "#{spec.version}" }
 
   spec.vendored_frameworks = "AkilesSDK.xcframework"
