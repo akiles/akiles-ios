@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AkilesSDK-Swift.h</key>
 		<data>
-		O9BVKpfBpQsyJOJZTMOhdL7Zpao=
+		0MqxvkPTzXL+3oIb+CYUpKBEaqU=
 		</data>
 		<key>Headers/AkilesSDK.h</key>
 		<data>
@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		IJaE6aXt8PMLhWTp313r/mHUc74=
+		2rkSV8y4KSVfQEmbGrWRypkGsIk=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		wc4EelUiUlycFqi385mR/rnF/yI=
+		QgR6Mn2LTH0LgVR9G/zGTh3xXJo=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uMp5wrbkitQuLVjhkbl/qr1GXpk=
+		hwRCfdO7DGU084jk9aLZWsFYv0w=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		wc4EelUiUlycFqi385mR/rnF/yI=
+		QgR6Mn2LTH0LgVR9G/zGTh3xXJo=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sCQaMhuN3KUAzJQvFktqgqdX6Q4=
+		jx6Flr8fLSv+cglDro7i9CxuR+o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vuunCIt76ZQdm4uC4ienu6BTud8Lqngre+4iqFP7KfQ=
+			JO22sob2/Vs6ReovT6B8NU3+9413fln2SsJMhU23fQE=
 			</data>
 		</dict>
 		<key>Headers/AkilesSDK.h</key>
@@ -69,35 +69,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x5X3kLlHEG/GxDPRSvW4nhy5/O2f+3zZHQKmvXdGbAc=
+			4+KUXf9bzMsjZyPeIbDZwxWumlyvG4UgS0+jhbqNqNI=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XDWNOTpnB8EfrudDkt89LDz/4UL0J8iARCuKnmubTSk=
+			PC6XZlgVd1OBgVNKl/TsZaAeoKrAN8exuI545vkYEAM=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9caDDRNhBcSR6k/uBogAJvwuYCRaqjZvbfk402KnWTk=
+			kydrIn7v+MjsjJpcIB4Ke8gGMx2X5zp8Ku3oc5Mgc+8=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XDWNOTpnB8EfrudDkt89LDz/4UL0J8iARCuKnmubTSk=
+			PC6XZlgVd1OBgVNKl/TsZaAeoKrAN8exuI545vkYEAM=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ptGEKNuryF8cbswCZHv0tc6J9Zby/X2Tyylw4zEHCXc=
+			K7LtC2Ge6Hocw0LX9cs5S8aIQofT9AMqA4jaRXIxtxI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

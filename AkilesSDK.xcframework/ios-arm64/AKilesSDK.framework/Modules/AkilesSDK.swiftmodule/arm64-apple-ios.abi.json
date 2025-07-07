@@ -6,6 +6,30 @@
     "children": [
       {
         "kind": "Import",
+        "name": "CoreNFC",
+        "printedName": "CoreNFC",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RustWrapper",
+        "printedName": "RustWrapper",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1883,6 +1907,29 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AkilesSDK@objc(cs)Card(im)close",
+            "mangledName": "$s9AkilesSDK4CardC5closeyyF",
+            "moduleName": "AkilesSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -1991,58 +2038,34 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreNFC",
-        "printedName": "CoreNFC",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "RustWrapper",
-        "printedName": "RustWrapper",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
+      "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "BooleanLiteral",
       "offset": 1360,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
+      "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "IntegerLiteral",
       "offset": 1445,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
+      "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "StringLiteral",
       "offset": 1537,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
+      "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "Dictionary",
       "offset": 1603,
       "length": 627,

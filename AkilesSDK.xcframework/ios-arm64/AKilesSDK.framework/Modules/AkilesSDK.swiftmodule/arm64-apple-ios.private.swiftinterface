@@ -59,5 +59,6 @@ public class CancellableOp<T, E> : ObjectiveC.NSObject, AkilesSDK.Cancellable wh
   @objc final public func getUid() -> Foundation.Data
   final public func update() async throws
   @objc final public func update(_ completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  @objc final public func close()
   @objc deinit
 }

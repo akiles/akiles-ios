@@ -601,6 +601,11 @@ SWIFT_CLASS("_TtC9AkilesSDK4Card") SWIFT_AVAILABILITY(ios,introduced=13.0)
 /// </ul>
 ///
 - (void)update:(void (^ _Nonnull)(NSError * _Nullable))completion;
+/// Closes the card.
+///
+/// returns:
+/// void (fire and forget)
+- (void)close;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
