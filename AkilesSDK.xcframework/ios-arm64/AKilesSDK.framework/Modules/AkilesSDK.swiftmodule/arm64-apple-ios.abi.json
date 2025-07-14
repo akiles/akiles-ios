@@ -6,30 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "CoreNFC",
-        "printedName": "CoreNFC",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "RustWrapper",
-        "printedName": "RustWrapper",
-        "declKind": "Import",
-        "moduleName": "AkilesSDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2037,6 +2013,30 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreNFC",
+        "printedName": "CoreNFC",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "RustWrapper",
+        "printedName": "RustWrapper",
+        "declKind": "Import",
+        "moduleName": "AkilesSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       }
     ],

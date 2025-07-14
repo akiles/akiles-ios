@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "AkilesSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "2.0.0"
   spec.summary      = "Akiles iOS SDK"
   spec.description  = <<-DESC
                       Akiles iOS SDK provides functionality for iOS applications.
