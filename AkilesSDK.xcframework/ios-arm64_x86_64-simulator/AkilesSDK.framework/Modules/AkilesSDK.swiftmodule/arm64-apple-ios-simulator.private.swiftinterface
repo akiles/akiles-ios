@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AkilesSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+@_exported import AkilesSDK
+import CoreNFC
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class CancellableOp<T, E> : ObjectiveC.NSObject, AkilesSDK.Cancellable where E : Swift.Error {
+  @objc public func cancel()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc final public class Akiles : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc final public func getVersion() -> Swift.String
+  @objc final public func getClientInfo() -> Swift.String
+  final public func getSessionIDs() async throws -> [Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getSessionIDs(_ completion: @escaping ([Swift.String]?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func addSession(token: Swift.String) async throws -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func addSession(_ token: Swift.String, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func removeSession(id: Swift.String) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func removeSession(_ id: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func removeAllSessions() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func removeAllSessions(_ completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func refreshSession(id: Swift.String) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func refreshSession(_ id: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func refreshAllSessions() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func refreshAllSessions(_ completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func getGadgets(sessionID: Swift.String) async throws -> [AkilesSDK.Gadget]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getGadgets(_ sessionID: Swift.String, completion: @escaping ([AkilesSDK.Gadget]?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func getHardwares(sessionID: Swift.String) async throws -> [AkilesSDK.Hardware]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getHardwares(_ sessionID: Swift.String, completion: @escaping ([AkilesSDK.Hardware]?, (any Swift.Error)?) -> Swift.Void)
+  #endif
+  final public func scan(cb: @escaping (AkilesSDK.Hardware) -> Swift.Void) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func scan(_ cb: @escaping (AkilesSDK.Hardware) -> Swift.Void, completion: @escaping ((any Swift.Error)?) -> Swift.Void) -> any AkilesSDK.Cancellable
+  #endif
+  final public func action(sessionID: Swift.String, gadgetID: Swift.String, actionID: Swift.String, options: AkilesSDK.ActionOptions, callback: any AkilesSDK.ActionCallback) async
+  @objc final public func action(_ sessionID: Swift.String, gadgetID: Swift.String, actionID: Swift.String, options: AkilesSDK.ActionOptions, callback: any AkilesSDK.ActionCallback, completion: @escaping () -> Swift.Void) -> any AkilesSDK.Cancellable
+  final public func sync(sessionID: Swift.String, hardwareID: Swift.String, callback: any AkilesSDK.SyncCallback) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func sync(_ sessionID: Swift.String, hardwareID: Swift.String, callback: any AkilesSDK.SyncCallback, completion: @escaping ((any Swift.Error)?) -> Swift.Void) -> any AkilesSDK.Cancellable
+  #endif
+  final public func scanCard() async throws -> AkilesSDK.Card
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func scanCard(_ completion: @escaping (AkilesSDK.Card?, (any Swift.Error)?) -> Swift.Void) -> any AkilesSDK.Cancellable
+  #endif
+  final public func isCardEmulationSupported() async -> Swift.Bool
+  @objc final public func isCardEmulationSupported(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func isBluetoothSupported() -> Swift.Bool
+  @objc final public func setLanguage(language: Swift.String)
+  @available(iOS 13.0, *)
+  final public func startCardEmulation() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(iOS 13.0, *)
+  @objc final public func startCardEmulation(_ completion: @escaping (Swift.Bool, Foundation.NSError?) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc final public class Card : ObjectiveC.NSObject {
+  @objc final public func isAkilesCard() -> Swift.Bool
+  @objc final public func getUid() -> Foundation.Data
+  final public func update() async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func update(_ completion: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
+  @objc final public func close()
+  @objc deinit
+}
