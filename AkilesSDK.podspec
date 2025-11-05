@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Akiles Technologies S.L." => "support@akiles.app" }
 
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/akiles/akiles-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/akiles/akiles-ios.git", :tag => "v#{spec.version}" }
 
   spec.vendored_frameworks = "AkilesSDK.xcframework"
   spec.preserve_paths = "AkilesSDK.xcframework"
