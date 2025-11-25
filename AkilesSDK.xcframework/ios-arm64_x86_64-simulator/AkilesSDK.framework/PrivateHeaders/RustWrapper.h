@@ -56,7 +56,7 @@
 
 - (void)doHardwareSync:(Cancel * _Nonnull)cancel hardwareId:(NSString * _Nonnull)hardwareId sessionId:(NSString * _Nonnull)sessionId callback:(id<SyncCallback> _Nonnull)callback completion:(void (^ _Nonnull)(void))completion;
 
-- (void)doScanForNearbyHardwares:(Cancel * _Nonnull)cancel callback:(id<ScanCallback> _Nonnull)scanListener completion:(void (^ _Nonnull)(void))completion;
+- (void)doScanForNearbyHardwares:(Cancel * _Nonnull)cancel callback:(id<ScanCallback> _Nonnull)scanListener completion:(void (^ _Nonnull)(NSError * _Nullable error))completion;
 
 - (void)scanCard:(Cancel * _Nonnull)cancel completion:(void (^ _Nonnull)(id<CardProxy> _Nullable card, NSError * _Nullable error))completion;
 
