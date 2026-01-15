@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AkilesSDK-Swift.h</key>
 		<data>
-		zKF3c2lHcCaW93NrCMNrd6sEnpo=
+		iwgMxkLBjG6ucj85nbYtBbcM/xg=
 		</data>
 		<key>Headers/AkilesSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8xbDd7HDpnARJjgOKpapz4FiktM=
+		yadX9tmrF2GF7+yUx+UPk6vFSb8=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ryLW1eu/j7rK+dZnQU3Q7cOhDFA=
+		d42VJehuH/xlyp48FKQUOMeeHAI=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3LtcsSqiT7GmKmXWhtXhyy0I2Xk=
+		GSY0WOX2Ejf8ycHP0Kjpu1iPwwc=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gx9rUz8fRSm4zBnSfRP2MohJanU=
+		3xGjMzjmNg5uqYxKqTq2quypJc8=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3LtcsSqiT7GmKmXWhtXhyy0I2Xk=
+		GSY0WOX2Ejf8ycHP0Kjpu1iPwwc=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gGibTzyDy5SGgh1yF+HsNJACUK4=
+		dsf9PLcBASpaHFZ+vnbUksIdCEY=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ryLW1eu/j7rK+dZnQU3Q7cOhDFA=
+		d42VJehuH/xlyp48FKQUOMeeHAI=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DWJz9zMq7MQBAgPr+vGk02irFk4=
+		XKgQBtUxRVD2EpZSdgqieQUJBaA=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Orw/jFOmVZRE700flIUSkkp07oY=
+		ftYzDYXltjOOPLs0BgSKjAd62m0=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DWJz9zMq7MQBAgPr+vGk02irFk4=
+		XKgQBtUxRVD2EpZSdgqieQUJBaA=
 		</data>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KW8ZXYedtNVUcNMzD3Io3EV2l+c=
+		XbWEhrgY+gf9WDEyAlKJndP0Xdg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WsO94XnqyizwBsSAoiX9IbrETehfJvTeqr0jVjyLC/E=
+			bd3gCGE45GBfq3Jl1nNbCVkijWkdhML5HRGuG2TxZbc=
 			</data>
 		</dict>
 		<key>Headers/AkilesSDK.h</key>
@@ -89,70 +89,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PrfSEIo03TXA2IU7RILuX3cqyOZVcqJQnRzN2qxig8=
+			+MR+bDDj5FSuPqI5WE5ICXbt13seqtSEu5R2S+O7huQ=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AJlGiaRzcHqIUGFHrB2Ctzj17LpZKmudc2VfSiLMoug=
+			aWO8+9bb2KtqWvU5X03lCRkX1R3Gi6ZpqAGHXe5+MHk=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ze4O+2MlgrYi8zpnsIOPfByFL9ZtnQoMXoiU/npykhM=
+			eTs4ux0PsiL3HKQwAFuCx2amzPlNSF9gBITblHg17bs=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AJlGiaRzcHqIUGFHrB2Ctzj17LpZKmudc2VfSiLMoug=
+			aWO8+9bb2KtqWvU5X03lCRkX1R3Gi6ZpqAGHXe5+MHk=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F/J5snD3Fyrc96hXBRiz4FBT7FaXvMdzJUK1U5ac2+Y=
+			NaYWEs5l742rlJ2CV359sv2bLqFbRoo7TbOLzG9/WUA=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5PrfSEIo03TXA2IU7RILuX3cqyOZVcqJQnRzN2qxig8=
+			+MR+bDDj5FSuPqI5WE5ICXbt13seqtSEu5R2S+O7huQ=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJ7xcGiJ5jADygyVR/6xZOSO49vcyyKEEboRb4nlbbU=
+			UI1K1tTk2GikdQ4AC3d1Dqb/m13JRN7gWmzBx0zw84U=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GMR0A9goJdhA6aawR25xQ+R5KIZr+85QbkzTzMeLp1I=
+			W/KJ23QR7RFISgE7TyoMLxEiU6rB4jD7aFEIXo0itEM=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PJ7xcGiJ5jADygyVR/6xZOSO49vcyyKEEboRb4nlbbU=
+			UI1K1tTk2GikdQ4AC3d1Dqb/m13JRN7gWmzBx0zw84U=
 			</data>
 		</dict>
 		<key>Modules/AkilesSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2PMLjY4KTYElCD1R6+j1rm5vpN9kdUU/i9C0jK80ldw=
+			NkTOQoi3dmiENIwZ28Gk7oOQwbun7oirprwdI2tf3JU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
