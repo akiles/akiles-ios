@@ -120,6 +120,13 @@ struct ContentView: View {
     @State private var emulationToastMessage: String = ""
     @State private var emulationToastIsError: Bool = false
     @State private var showEmulationToast: Bool = false
+
+    // Diagnostics state
+    @State private var isCapturingDiagnostics: Bool = false
+    @State private var diagnosticsTask: Task<Void, Never>? = nil
+    @State private var diagnosticsToastMessage: String = ""
+    @State private var diagnosticsToastIsError: Bool = false
+    @State private var showDiagnosticsToast: Bool = false
     
     var body: some View {
         NavigationView {
@@ -320,6 +327,34 @@ struct ContentView: View {
                                         showEmulationToast = false
                                     }
                                 }
+                        }
+
+                        // Diagnostics Widget
+                        VStack(spacing: 12) {
+                            DiagnosticsView(
+                                isLoading: isLoading,
+                                isCapturing: isCapturingDiagnostics,
+                                onCaptureDiagnostics: {
+                                    await captureDiagnostics()
+                                },
+                                onCancelCapture: {
+                                    cancelCaptureDiagnostics()
+                                }
+                            )
+
+                            if showDiagnosticsToast {
+                                Text(diagnosticsToastMessage)
+                                    .padding()
+                                    .background(diagnosticsToastIsError ? Color.red.opacity(0.1) : Color.green.opacity(0.1))
+                                    .foregroundColor(diagnosticsToastIsError ? .red : .green)
+                                    .cornerRadius(8)
+                                    .animation(.easeInOut, value: showDiagnosticsToast)
+                                    .onAppear {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                            showDiagnosticsToast = false
+                                        }
+                                    }
+                            }
                         }
                     }
                     
@@ -679,8 +714,45 @@ struct ContentView: View {
         showEmulationToast = true
     }
     
+    private func captureDiagnostics() async {
+        guard !selectedSessionID.isEmpty else {
+            statusMessage = "Please select a session first"
+            statusIsError = true
+            return
+        }
+
+        isCapturingDiagnostics = true
+
+        diagnosticsTask = Task {
+            do {
+                try await akiles.captureDiagnostics(sessionID: selectedSessionID)
+                DispatchQueue.main.async {
+                    self.statusMessage = "Diagnostics captured successfully"
+                    self.statusIsError = false
+                    self.diagnosticsToastMessage = "Diagnostics captured!"
+                    self.diagnosticsToastIsError = false
+                    self.showDiagnosticsToast = true
+                    self.isCapturingDiagnostics = false
+                    self.diagnosticsTask = nil
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    self.statusMessage = "Error capturing diagnostics: \(error.localizedDescription)"
+                    self.statusIsError = true
+                    self.diagnosticsToastMessage = "Diagnostics capture failed"
+                    self.diagnosticsToastIsError = true
+                    self.showDiagnosticsToast = true
+                    self.isCapturingDiagnostics = false
+                    self.diagnosticsTask = nil
+                }
+            }
+        }
+
+        await diagnosticsTask?.value
+    }
+
     // MARK: - Cancellation Functions
-    
+
     private func cancelScan() {
         scanTask?.cancel()
         scanTask = nil
@@ -706,6 +778,14 @@ struct ContentView: View {
         gadgetToastMessage = "Action cancelled"
         gadgetToastIsError = false
         showGadgetToast = true
+    }
+
+    private func cancelCaptureDiagnostics() {
+        diagnosticsTask?.cancel()
+        diagnosticsTask = nil
+        isCapturingDiagnostics = false
+        statusMessage = "Diagnostics capture cancelled"
+        statusIsError = false
     }
 }
 

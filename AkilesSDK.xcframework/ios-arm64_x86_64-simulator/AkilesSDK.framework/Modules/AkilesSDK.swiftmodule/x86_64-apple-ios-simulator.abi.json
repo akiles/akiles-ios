@@ -1373,6 +1373,91 @@
           },
           {
             "kind": "Function",
+            "name": "captureDiagnostics",
+            "printedName": "captureDiagnostics(sessionID:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9AkilesSDK0A0C18captureDiagnostics9sessionIDySS_tYaKF",
+            "mangledName": "$s9AkilesSDK0A0C18captureDiagnostics9sessionIDySS_tYaKF",
+            "moduleName": "AkilesSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureDiagnostics",
+            "printedName": "captureDiagnostics(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Cancellable",
+                "printedName": "any AkilesSDK.Cancellable",
+                "usr": "c:objc(pl)Cancellable"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Swift.Error)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)captureDiagnostics:completion:",
+            "mangledName": "$s9AkilesSDK0A0C18captureDiagnostics_10completionSo11Cancellable_pSS_ys5Error_pSgctF",
+            "moduleName": "AkilesSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "scanCard",
             "printedName": "scanCard()",
             "children": [

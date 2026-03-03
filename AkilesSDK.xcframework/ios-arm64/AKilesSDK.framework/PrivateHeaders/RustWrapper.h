@@ -60,6 +60,10 @@
 
 - (void)scanCard:(Cancel * _Nonnull)cancel completion:(void (^ _Nonnull)(id<CardProxy> _Nullable card, NSError * _Nullable error))completion;
 
+- (void)captureDiagnostics:(Cancel * _Nonnull)cancel
+                sessionId:(NSString * _Nonnull)sessionId
+               completion:(void (^ _Nonnull)(NSError * _Nullable error))completion;
+
 @end
 
 // Internal initialization function for the Rust backend
