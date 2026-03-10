@@ -1374,23 +1374,54 @@
           {
             "kind": "Function",
             "name": "captureDiagnostics",
-            "printedName": "captureDiagnostics(sessionID:)",
+            "printedName": "captureDiagnostics(sessionID:scanDuration:required:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "hasDefaultArg": true,
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9AkilesSDK0A0C18captureDiagnostics9sessionIDySS_tYaKF",
-            "mangledName": "$s9AkilesSDK0A0C18captureDiagnostics9sessionIDySS_tYaKF",
+            "usr": "s:9AkilesSDK0A0C18captureDiagnostics9sessionID12scanDuration8requiredS2S_s5Int32VSaySSGSgtYaKF",
+            "mangledName": "$s9AkilesSDK0A0C18captureDiagnostics9sessionID12scanDuration8requiredS2S_s5Int32VSaySSGSgtYaKF",
             "moduleName": "AkilesSDK",
             "declAttributes": [
               "Final",
@@ -1403,7 +1434,7 @@
           {
             "kind": "Function",
             "name": "captureDiagnostics",
-            "printedName": "captureDiagnostics(_:completion:)",
+            "printedName": "captureDiagnostics(_:scanDuration:required:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1418,9 +1449,37 @@
                 "usr": "s:SS"
               },
               {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "((any Swift.Error)?) -> ()",
+                "printedName": "(Swift.String?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -1429,24 +1488,45 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any Swift.Error)?",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
                       }
-                    ],
-                    "usr": "s:Sq"
+                    ]
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)captureDiagnostics:completion:",
-            "mangledName": "$s9AkilesSDK0A0C18captureDiagnostics_10completionSo11Cancellable_pSS_ys5Error_pSgctF",
+            "usr": "c:@M@AkilesSDK@objc(cs)Akiles(im)captureDiagnostics:scanDuration:required:completion:",
+            "mangledName": "$s9AkilesSDK0A0C18captureDiagnostics_12scanDuration8required10completionSo11Cancellable_pSS_s5Int32VSaySSGSgySSSg_s5Error_pSgtctF",
             "moduleName": "AkilesSDK",
             "declAttributes": [
               "Final",
@@ -2128,6 +2208,13 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/Akiles.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27254,
+      "length": 2,
+      "value": "30"
+    },
     {
       "filePath": "\/Users\/lulf\/work\/firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "BooleanLiteral",

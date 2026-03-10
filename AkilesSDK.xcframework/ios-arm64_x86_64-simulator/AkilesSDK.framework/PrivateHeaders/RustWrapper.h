@@ -62,7 +62,9 @@
 
 - (void)captureDiagnostics:(Cancel * _Nonnull)cancel
                 sessionId:(NSString * _Nonnull)sessionId
-               completion:(void (^ _Nonnull)(NSError * _Nullable error))completion;
+                  scanDuration:(int)scanDuration
+                 required:(NSArray<NSString *> * _Nullable)required
+               completion:(void (^ _Nonnull)(NSString * _Nullable diagnosticID, NSError * _Nullable error))completion;
 
 @end
 

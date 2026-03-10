@@ -521,13 +521,20 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 /// A <code>Cancellable</code> object that can be used to stop the synchronization
 - (id <Cancellable> _Nonnull)sync:(NSString * _Nonnull)sessionID hardwareID:(NSString * _Nonnull)hardwareID callback:(id <SyncCallback> _Nonnull)callback completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// Captures diagnostics for the specified session (Objective-C version).
-/// This is the Objective-C compatible version of <code>captureDiagnostics(sessionID:)</code>.
+/// This is the Objective-C compatible version of <code>captureDiagnostics(sessionID:scanDuration:required:)</code>.
 /// For Swift code, prefer using the async version which provides better error handling.
 /// This operation can be cancelled by calling <code>cancel()</code> on the returned object.
 /// \param sessionID The session ID to capture diagnostics for
 ///
+/// \param scanDuration BLE scan duration in seconds (0 = skip scan entirely)
+///
+/// \param required Optional list of hardware IDs — stop scanning early when all are found
+///
 /// \param completion Completion handler called when the operation finishes
 /// <ul>
+///   <li>
+///     <code>diagnosticID</code>: The diagnostic ID string if successful, or <code>nil</code> if an error occurred
+///   </li>
 ///   <li>
 ///     <code>error</code>: Error object if the operation failed, or <code>nil</code> if successful
 ///   </li>
@@ -536,7 +543,7 @@ SWIFT_CLASS("_TtC9AkilesSDK6Akiles") SWIFT_AVAILABILITY(ios,introduced=13.0)
 ///
 /// returns:
 /// A <code>Cancellable</code> object that can be used to stop the operation
-- (id <Cancellable> _Nonnull)captureDiagnostics:(NSString * _Nonnull)sessionID completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
+- (id <Cancellable> _Nonnull)captureDiagnostics:(NSString * _Nonnull)sessionID scanDuration:(int32_t)scanDuration required:(NSArray<NSString *> * _Nullable)required completion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_WARN_UNUSED_RESULT;
 /// Scans an NFC card using the device’s NFC reader (Objective-C version).
 /// This is the Objective-C compatible version of <code>scanCard()</code>.
 /// For Swift code, prefer using the async version which provides better error handling.

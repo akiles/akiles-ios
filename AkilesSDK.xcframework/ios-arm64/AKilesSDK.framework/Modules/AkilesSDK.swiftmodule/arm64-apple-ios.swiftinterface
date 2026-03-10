@@ -61,9 +61,11 @@ public class CancellableOp<T, E> : ObjectiveC.NSObject, AkilesSDK.Cancellable wh
   #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func sync(_ sessionID: Swift.String, hardwareID: Swift.String, callback: any AkilesSDK.SyncCallback, completion: @escaping ((any Swift.Error)?) -> Swift.Void) -> any AkilesSDK.Cancellable
   #endif
-  final public func captureDiagnostics(sessionID: Swift.String) async throws
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc final public func captureDiagnostics(_ sessionID: Swift.String, completion: @escaping ((any Swift.Error)?) -> Swift.Void) -> any AkilesSDK.Cancellable
+  final public func captureDiagnostics(sessionID: Swift.String, scanDuration: Swift.Int32 = 30, required: [Swift.String]? = nil) async throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func captureDiagnostics(_ sessionID: Swift.String, scanDuration: Swift.Int32, required: [Swift.String]?, completion: @escaping (Swift.String?, (any Swift.Error)?) -> Swift.Void) -> any AkilesSDK.Cancellable
   #endif
   final public func scanCard() async throws -> AkilesSDK.Card
   #if compiler(>=5.3) && $NonescapableTypes
