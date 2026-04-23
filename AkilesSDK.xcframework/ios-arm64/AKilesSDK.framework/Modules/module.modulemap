@@ -7,5 +7,4 @@ framework module AkilesSDK {
 
 module AkilesSDK.Swift {
   header "AkilesSDK-Swift.h"
-  requires objc
 }

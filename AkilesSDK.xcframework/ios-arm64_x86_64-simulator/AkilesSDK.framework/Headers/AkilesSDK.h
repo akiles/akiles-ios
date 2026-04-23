@@ -101,6 +101,9 @@ typedef NS_ENUM(NSInteger, ErrorCode) {
     ErrorCodeNfcNotAvailable = 22,                          // NFC is not available on device.
     ErrorCodeBluetoothPermissionNotGrantedPermanently = 23, // Bluetooth permission is permanently denied.
     ErrorCodeLocationPermissionNotGrantedPermanently = 24,  // Location permission is permanently denied.
+    ErrorCodeHCESessionAlreadyInProgress = 25,              // HCE session already in progress.
+    ErrorCodeHCENotSupported = 26,                          // HCE is not supported on this device / OS version.
+    ErrorCodeHCENotEligible = 27,                           // HCE is not eligible (permissions/region).
 };
 
 /// Converts ActionInternetStatus to UPPER_CASE_WITH_UNDERSCORES string.
