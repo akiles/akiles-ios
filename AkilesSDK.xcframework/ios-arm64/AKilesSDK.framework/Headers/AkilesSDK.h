@@ -75,35 +75,61 @@ typedef NS_ENUM(NSInteger, SyncStatus) {
 };
 
 /**
- * Error codes for Akiles oeprations.
+ * Error codes for Akiles operations.
  */
 typedef NS_ENUM(NSInteger, ErrorCode) {
-    ErrorCodeInternal = 0,                                  // Something went wrong internally.
-    ErrorCodeInvalidParam = 1,                              // Invalid parameter.
-    ErrorCodePermissionDenied = 2,                          // No permission for the requested action.
-    ErrorCodeInvalidSession = 11,                           // The session token is invalid.
-    ErrorCodeAllCommMethodsFailed = 12,                     // All communication methods failed.
-    ErrorCodeInternetNotAvailable = 13,                     // Phone has no internet access.
-    ErrorCodeInternetDeviceOffline = 14,                    // Server could not reach device.
-    ErrorCodeInternetLocationOutOfRadius = 15,              // Outside the maximum radius.
-    ErrorCodeInternetNotPermitted = 16,                     // Internet communication method not accepted.
-    ErrorCodeBluetoothDeviceNotFound = 3,                   // Device not within Bluetooth range.
-    ErrorCodeBluetoothDisabled = 4,                         // Bluetooth turned off.
-    ErrorCodeBluetoothNotAvailable = 5,                     // No Bluetooth support.
-    ErrorCodeBluetoothPermissionNotGranted = 6,             // Bluetooth permission not granted.
-    ErrorCodeTimeout = 8,                                   // Operation timed out.
-    ErrorCodeCanceled = 9,                                  // Operation canceled.
-    ErrorCodeNFCReadError = 10,                             // NFC read error.
-    ErrorCodeLocationDisabled = 17,                         // Location Disabled.
-    ErrorCodeLocationNotAvailable = 18,                     // Location not available.
-    ErrorCodeLocationPermissionNotGranted = 19,             // Location permission not granted.
-    ErrorCodeLocationFailed = 20,                           // Failed to acquire location.
-    ErrorCodeNfcNotAvailable = 22,                          // NFC is not available on device.
-    ErrorCodeBluetoothPermissionNotGrantedPermanently = 23, // Bluetooth permission is permanently denied.
-    ErrorCodeLocationPermissionNotGrantedPermanently = 24,  // Location permission is permanently denied.
-    ErrorCodeHCESessionAlreadyInProgress = 25,              // HCE session already in progress.
-    ErrorCodeHCENotSupported = 26,                          // HCE is not supported on this device / OS version.
-    ErrorCodeHCENotEligible = 27,                           // HCE is not eligible (permissions/region).
+    /// Something went wrong internally.
+    ErrorCodeInternal = 0,
+    /// Invalid parameter.
+    ErrorCodeInvalidParam = 1,
+    /// No permission for the requested action.
+    ErrorCodePermissionDenied = 2,
+    /// The session token is invalid.
+    ErrorCodeInvalidSession = 11,
+    /// All communication methods failed.
+    ErrorCodeAllCommMethodsFailed = 12,
+    /// Phone has no internet access.
+    ErrorCodeInternetNotAvailable = 13,
+    /// Server could not reach device.
+    ErrorCodeInternetDeviceOffline = 14,
+    /// Outside the maximum radius.
+    ErrorCodeInternetLocationOutOfRadius = 15,
+    /// Internet communication method not accepted.
+    ErrorCodeInternetNotPermitted = 16,
+    /// Device not within Bluetooth range.
+    ErrorCodeBluetoothDeviceNotFound = 3,
+    /// Bluetooth turned off.
+    ErrorCodeBluetoothDisabled = 4,
+    /// No Bluetooth support.
+    ErrorCodeBluetoothNotAvailable = 5,
+    /// Bluetooth permission not granted.
+    ErrorCodeBluetoothPermissionNotGranted = 6,
+    /// Operation timed out.
+    ErrorCodeTimeout = 8,
+    /// Operation canceled.
+    ErrorCodeCanceled = 9,
+    /// NFC read error.
+    ErrorCodeNFCReadError = 10,
+    /// Location Disabled.
+    ErrorCodeLocationDisabled = 17,
+    /// Location not available.
+    ErrorCodeLocationNotAvailable = 18,
+    /// Location permission not granted.
+    ErrorCodeLocationPermissionNotGranted = 19,
+    /// Failed to acquire location.
+    ErrorCodeLocationFailed = 20,
+    /// NFC is not available on device.
+    ErrorCodeNfcNotAvailable = 22,
+    /// Bluetooth permission is permanently denied.
+    ErrorCodeBluetoothPermissionNotGrantedPermanently = 23,
+    /// Location permission is permanently denied.
+    ErrorCodeLocationPermissionNotGrantedPermanently = 24,
+    /// HCE session already in progress.
+    ErrorCodeHCESessionAlreadyInProgress = 25,
+    /// HCE is not supported on this device / OS version.
+    ErrorCodeHCENotSupported = 26,
+    /// HCE is not eligible (permissions/region).
+    ErrorCodeHCENotEligible = 27,
 };
 
 /// Converts ActionInternetStatus to UPPER_CASE_WITH_UNDERSCORES string.
