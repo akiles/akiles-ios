@@ -2211,35 +2211,21 @@
     {
       "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/Akiles.swift",
       "kind": "IntegerLiteral",
-      "offset": 27254,
+      "offset": 29866,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 1462,
+      "offset": 1237,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1547,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
-      "kind": "StringLiteral",
-      "offset": 1639,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/uri\/git\/akiles-firmware\/apollo-ios-sdk\/AkilesSDK\/AkilesSDK\/HCECardSession.swift",
       "kind": "Dictionary",
-      "offset": 1706,
+      "offset": 2298,
       "length": 627,
       "value": "[(\"instructions\", [(\"en\", \"Hold the smartphone close to an Akiles device.\"), (\"es\", \"Acerca el smartphone a un dispositivo Akiles.\")]), (\"opening\", [(\"en\", \"Processing NFC communication...\"), (\"es\", \"Procesando la comunicación NFC...\")]), (\"success\", [(\"en\", \"NFC communication successful!\"), (\"es\", \"¡Comunicación NFC exitosa!\")]), (\"error\", [(\"en\", \"Something unexpected happened. Please try again.\"), (\"es\", \"Ocurrió algo inesperado. Por favor, intenta de nuevo.\")])]"
     }

@@ -35,7 +35,9 @@ typedef NS_ENUM(NSInteger, ActionInternetStatus) {
     /** The SDK is acquiring the device's current location */
     ActionInternetStatusAcquiringLocation = 1,
     /** Waiting for the device to be within the required radius of the target */
-    ActionInternetStatusWaitingForLocationInRadius = 2
+    ActionInternetStatusWaitingForLocationInRadius = 2,
+    /** Establishing the connection to the server (DNS, TCP and TLS handshake) */
+    ActionInternetStatusConnecting = 3
 };
 
 /**
@@ -264,6 +266,17 @@ FOUNDATION_EXPORT NSDictionary *NSDictionaryFromNSError(NSError *error);
  */
 - (void)onDiscover:(Hardware *)info;
 
+/**
+ * Called when the scan completes successfully.
+ */
+- (void)onSuccess;
+
+/**
+ * Called when the scan fails.
+ * @param error The error that occurred during scanning
+ */
+- (void)onError:(NSError *)error;
+
 @end
 
 /**
@@ -346,6 +359,17 @@ FOUNDATION_EXPORT NSDictionary *NSDictionaryFromNSError(NSError *error);
  * @param percent Progress as a percentage (0.0 to 100.0)
  */
 - (void)onStatusProgress:(float)percent;
+
+/**
+ * Called when synchronization completes successfully.
+ */
+- (void)onSuccess;
+
+/**
+ * Called when synchronization fails.
+ * @param error The error that occurred during synchronization
+ */
+- (void)onError:(NSError *)error;
 
 @end
 
