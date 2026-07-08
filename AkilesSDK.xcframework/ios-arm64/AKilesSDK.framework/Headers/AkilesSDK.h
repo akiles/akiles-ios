@@ -132,6 +132,8 @@ typedef NS_ENUM(NSInteger, ErrorCode) {
     ErrorCodeHCENotSupported = 26,
     /// HCE is not eligible (permissions/region).
     ErrorCodeHCENotEligible = 27,
+    /// The device (session) is not granted access by the organization administrator.
+    ErrorCodeSessionNotGranted = 28,
 };
 
 /// Converts ActionInternetStatus to UPPER_CASE_WITH_UNDERSCORES string.
