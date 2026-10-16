@@ -22,6 +22,7 @@ iOS demo app showcasing the AkilesSDK for access control and hardware interactio
 - Gadget control (open, close, start, stop actions)
 - Bluetooth hardware scanning and synchronization
 - NFC card scanning and management
+- Adding the session's access pass to Apple Wallet (requires Apple's in-app provisioning entitlement for Wallet access passes on your team)
 
 ## Requirements
 

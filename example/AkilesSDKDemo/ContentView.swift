@@ -329,6 +329,13 @@ struct ContentView: View {
                                 }
                         }
 
+                        // Apple Wallet Widget
+                        AppleWalletView(
+                            akiles: akiles,
+                            selectedSessionID: selectedSessionID,
+                            isLoading: isLoading
+                        )
+
                         // Diagnostics Widget
                         VStack(spacing: 12) {
                             DiagnosticsView(
