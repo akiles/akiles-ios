@@ -7,6 +7,7 @@ struct AppleWalletView: View {
     let selectedSessionID: String
     let isLoading: Bool
 
+    @State private var memberID: String = ""
     @State private var isAdding: Bool = false
     @State private var resultMessage: String = ""
     @State private var resultIsError: Bool = false
@@ -21,6 +22,13 @@ struct AppleWalletView: View {
                 Text("Add the selected session's access pass to Apple Wallet")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
+
+                // Only needed for user sessions holding several memberships;
+                // a member token always has exactly one.
+                TextField("Member ID (optional)", text: $memberID)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
 
                 if isAdding {
                     HStack {
@@ -62,7 +70,10 @@ struct AppleWalletView: View {
         defer { isAdding = false }
 
         do {
-            try await akiles.addToAppleWallet(sessionID: selectedSessionID)
+            try await akiles.addToAppleWallet(
+                sessionID: selectedSessionID,
+                memberID: memberID.isEmpty ? nil : memberID
+            )
             resultMessage = "Pass added to Apple Wallet"
             resultIsError = false
         } catch let error as NSError where error.code == ErrorCode.canceled.rawValue {
