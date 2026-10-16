@@ -72,6 +72,12 @@ class ToastSyncCallback: NSObject, SyncCallback {
         onToast("Sync progress: \(Int(percent))%", false)
         onProgress(percent, .syncingDevice) // Default to syncingDevice for progress updates
     }
+
+    // The async sync() reports the outcome by returning or throwing; these are
+    // only called on the Objective-C completion-handler variant.
+    func onSuccess() {}
+
+    func onError(_ error: Error) {}
 }
 
 struct ContentView: View {
