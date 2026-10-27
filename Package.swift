@@ -11,8 +11,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AkilesSDK",
-            url: "https://github.com/akiles/akiles-ios/releases/download/v2.7.0/AkilesSDK.xcframework.zip",
-            checksum: "45fca6de89ba0819bd861c1515b26430562f834d54ea242e43baa6a0afca766d"
+            url: "https://github.com/akiles/akiles-ios/releases/download/v2.7.1/AkilesSDK.xcframework.zip",
+            checksum: "73b273433cc836e99997d5e98fcca78ff9036b38e2a205e808387833ffa8b22b"
         ),
     ]
 )
