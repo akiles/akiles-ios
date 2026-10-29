@@ -1,0 +1,21 @@
+Pod::Spec.new do |spec|
+  spec.name         = "AkilesSDK"
+  spec.version      = "2.7.1-g5298188"
+  spec.summary      = "Akiles iOS SDK"
+  spec.description  = <<-DESC
+                      Akiles iOS SDK provides functionality for iOS applications.
+                      DESC
+
+  spec.homepage     = "https://github.com/akiles/akiles-ios"
+  spec.license      = { :type => "LicenseRef-Akiles-Proprietary", :file => "LICENSE" }
+  spec.author       = { "Akiles Technologies S.L." => "support@akiles.app" }
+
+  spec.platform     = :ios, "15.0"
+  spec.source       = { :git => "https://github.com/akiles/akiles-ios.git", :tag => "v#{spec.version}" }
+
+  spec.vendored_frameworks = "AkilesSDK.xcframework"
+  spec.preserve_paths = "AkilesSDK.xcframework"
+
+  spec.requires_arc = true
+  spec.swift_version = "5.0"
+end
